@@ -1,0 +1,8 @@
+SELECT TOP (1000) [ProductId]
+      ,[Name]
+      ,[Price]
+      ,[Description]
+      ,[CategoryName]
+      ,[ImageUrl]
+      ,[ImageLocalPath]
+  FROM [pelican].[dbo].[Products]

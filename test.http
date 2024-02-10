@@ -1,0 +1,18 @@
+###DaysCalculator
+GET http://localhost:7073/api/dayscalculator/1978-05-06
+
+###SqlInput
+GET http://localhost:7073/api/SqlInput?productid=1
+
+###SqlOutput
+POST http://localhost:7073/api/SqlOutput
+Content-Type: application/json
+
+{
+   "Name":"New World Order",
+   "Price":45.0,
+   "Description":"Talha Inan",
+   "CategoryName":"Philosophy",
+   "ImageUrl":"",
+   "ImageLocalPath":""
+}
