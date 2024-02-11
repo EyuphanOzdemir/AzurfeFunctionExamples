@@ -27,11 +27,7 @@ namespace SqlOutput
             Product newProduct = new();
             try
             {
-                //newProduct = JsonConvert.DeserializeObject<Product>(requestBody);
-                newProduct.Price = 4;
-                newProduct.Description = "Desc";
-                newProduct.CategoryName = "Fiction";
-                newProduct.Name = "name";
+                newProduct = JsonConvert.DeserializeObject<Product>(requestBody);
                 await products.AddAsync(newProduct);
             }
             catch (Exception ex)
